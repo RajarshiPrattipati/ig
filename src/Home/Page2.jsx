@@ -7,6 +7,7 @@ import Tetris from './technology-comp/Tetris';
 import Column from './technology-comp/Column';
 import Coordinate from './technology-comp/Coordinate';
 import Building from './technology-comp/Building';
+import './quotes.css';
 
 
 const pageData = [
@@ -57,6 +58,7 @@ export default class Design extends React.PureComponent {
         md: item.full ? 24 : 8, xs: 24,
       };
       return (
+        
         <Col {...colProps} key={i.toString()} className="page2-item-wrapper">
           <div
             className={`page2-item${item.full ? ' full' : ''}`}
@@ -81,9 +83,18 @@ export default class Design extends React.PureComponent {
       );
     });
     return (
+      
       <div className="page-wrapper page2">
+         
         <div className="page">
+    
           <h1>Why Influencer Gig X?</h1>
+          <h5 >For influencers, it gives a fresh network of  influencers in the digital ecosystem. 
+It also gives a chance to network & motivate other emerging creators 
+to pursue their passion by interacting with them & strategising collaborations  <br/><br/>
+
+We want to drive influencers to expand their fan base with genuine engagement and authentic relationships.
+</h5>
           <i />
           <OverPack className="page2-content">
             <QueueAnim component={Row} key="queue" type="bottom" leaveReverse>
@@ -91,6 +102,12 @@ export default class Design extends React.PureComponent {
             </QueueAnim>
           </OverPack>
         </div>
+        <br />
+<blockquote class="otro-blockquote">
+Social networks, sometimes called “relationship networks,” help influencers and creators connect online to share information and ideas
+
+  
+</blockquote>
       </div>);
   }
 }

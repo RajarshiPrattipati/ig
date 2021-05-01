@@ -4,7 +4,6 @@ import { TweenOneGroup } from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import { Row, Col } from 'antd';
 import { page1 } from './data';
-
 const pointPos = [
   { x: -90, y: -20 },
   { x: 35, y: -25 },
@@ -67,6 +66,8 @@ export default class Design extends React.PureComponent {
       ));
       return (
         <Col md={8} xs={24} key={i.toString()} className="page1-item">
+           
+  
           <a
             className="page1-item-link"
             href={item.link}
@@ -103,6 +104,8 @@ export default class Design extends React.PureComponent {
             </QueueAnim>
           </OverPack>
         </div>
+       
+
       </div>);
   }
 }

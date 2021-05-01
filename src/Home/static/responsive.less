@@ -4,7 +4,12 @@
     background-size: auto 459px;
   }
 }
-
+@font-face {
+  font-family: 'Nexa-Bold';
+  src: local('Nexa-Bold'), url(./nexa.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
 @media only screen and (max-width: 767.99px) {
   .banner{
     .banner-anim{
@@ -40,6 +45,8 @@
     h1{
       font-size: 28px;
       margin: 64px 0 32px;
+      font-family: Nexa-Bold;
+
     }
   }
   .page1{
@@ -51,6 +58,7 @@
     background-size: cover;
     h1{
       margin: 107px 0 32px;
+      font-family: Nexa-Bold;
     }
     &-content{
       margin-top: 72px;
@@ -93,7 +101,8 @@
     .footer-item-col:nth-child(2n) {
       display: none;
     };
-    .footer-item {
+    .footer-item {    font-family: Nexa-Bold;
+
       margin-bottom: 48px;
       text-align: center;
     }

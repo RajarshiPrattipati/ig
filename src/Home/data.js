@@ -52,14 +52,16 @@ export const banner = [
     children: [
       { children: 'Social Media Influencer Conference', className: 'seeconf-en-name' },
       { children: 'Influencer\'s Gig', className: 'seeconf-title', tag: 'h1' },
-      { children: 'A dedicated community curated for you to explore & network', className: 'seeconf-cn-name' },
+      { children: 'We’re building an ecosystem for Influencers', className: 'seeconf-cn-name' },
+      {children: ' This is a dedicated community for influencers to explore & network', className: 'seeconf-time' },
+     
       {
-        children: 'Sign Up',
+        children: 'Learn More',
         className: 'banner-button',
         tag: 'button',
         link: 'https://seeconf.alipay.com/',
       },
-      { children: 'June 6th - June 8th , 2021', className: 'seeconf-time' },
+      
     ],
   },
   {

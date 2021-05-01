@@ -4,7 +4,6 @@ import QueueAnim from 'rc-queue-anim';
 import BannerAnim from 'rc-banner-anim';
 import { Button } from 'antd';
 import { banner } from './data';
-
 const { Element } = BannerAnim;
 const { BgElement } = Element;
 
@@ -51,7 +50,7 @@ class Banner extends React.PureComponent {
         <div className="page">
           <div className="logo" />
           <BannerAnim type="across" duration={550} ease="easeInOutQuint">
-            {bannerChildren[0]}
+            {bannerChildren}
           </BannerAnim>
         </div>
       </div>
